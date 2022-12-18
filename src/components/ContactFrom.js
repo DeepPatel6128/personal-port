@@ -18,6 +18,7 @@ export default function ContactFrom() {
     e.preventDefault();
 
     dispatch(createPost(postData));
+    setPostData({ ...postData, name: "", message: "", email: "" });
   };
   return (
     <div className="contact-container">
